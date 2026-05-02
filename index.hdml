@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zracross KYP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+  <!-- LOGIN -->
+  <div id="login">
+    <h2>Know Your Payment</h2>
+    <input type="text" id="name" placeholder="Enter Name">
+    <input type="email" id="email" placeholder="Enter Email">
+    <button onclick="sendOTP()">Send OTP</button>
+  </div>
+
+  <!-- OTP -->
+  <div id="otpBox" style="display:none;">
+    <h3>Enter OTP</h3>
+    <input type="text" id="otp" placeholder="6 digit OTP">
+    <button onclick="verifyOTP()">Verify</button>
+    <p id="timer"></p>
+    <button onclick="resendOTP()">Resend OTP</button>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" style="display:none;">
+    <h2 id="userName"></h2>
+    <p id="userEmail"></p>
+    <h3 id="amount"></h3>
+
+    <div id="workflow"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
